@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Robloxの紹介ページ">
+  <title>Roblox紹介</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <header>
+    <h1>Welcome to Roblox</h1>
+    <p>あなたの創造力を開花させるオンラインプラットフォーム</p>
+    <div class="hamburger" id="hamburger">
+      <!-- ハンバーガーアイコン -->
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+    <nav class="menu" id="menu">
+      <ul>
+        <li><a href="#about">Robloxとは？</a></li>
+        <li><a href="#features">主な特徴</a></li>
+        <li><a href="#favorite-games">おすすめゲーム</a></li>
+        <li><a href="#movies">Roblox動画紹介</a></li>
+        <li><a href="#how-to-start">始め方</a></li>
+      </ul>
+    </nav>
+
+    <div class="slideshow-container">
+      <div class="slide fade">
+        <img src="images/image1.jpg" alt="Slide 1" width="600" height="200">
+      </div>
+      <div class="slide fade">
+        <img src="images/image2.jpg" alt="Slide 2" width="600" height="200">
+      </div>
+      <div class="slide fade">
+        <img src="images/image3.jpg" alt="Slide 3">
+      </div>
+      <div class="slide fade">
+        <img src="images/image4.jpg" alt="slide 4">
+      </div>
+      <div class="slide fade">
+        <img src="images/image5.jpg" alt="slide 5" width="600" height="200">
+      </div>
+      <div class="slide fade">
+        <img src="images/image6.jpg" alt="slide 6" width="600" height="200">
+      </div>
+      <!-- 次へ/前へボタン -->
+      <a class="prev" onclick="changeSlide(-1)">&#10094;</a>
+      <a class="next" onclick="changeSlide(1)">&#10095;</a>
+
+  </header>
+  <main>
+    <section id="about">
+      <h2>Robloxとは？</h2>
+      <div class="image-container">
+        <div class="images">
+          <a href="https://prtimes.jp/main/html/rd/p/000000268.000024241.html" target="_blank">
+            <img src="images/robloxevent.jpg" alt="Sample Image" width="300" height="200">
+          </a>
+        </div>
+        <div class="images">
+          <a href="https://transcosmos-meta.jp/column/531/" target="_blank">
+            <img src="images/imageRobloxtop.jpg" alt="Sample Image" width="300" height="200">
+          </a>
+        </div>
+        <div class="images">
+          <a href="https://digitane.jp/online/topics/roblox/10707/" target="_blank">
+            <img src="images/imagesRobloxedujpg.jpg" alt="Sample Image" width="300" height="200">
+          </a>
+        </div>
+        <div class="images">
+          <a href="https://metacolle.jp/study/roblox-entertainment/" target="_blank">
+            <img src="images/imageevents.jpg" alt="Sample Image" width="300" height="200">
+          </a>
+        </div>
+        <p>Robloxは、世界中のユーザーが作成したゲームや体験を楽しむことができるオンラインプラットフォームです。
+          自分でゲームを作ったり、他の人が作成した作品をプレイすることができます。FPSやパズル、脱出、ホラー、アスレチックなど、
+        多様なジャンルで遊ぶことが出来ます。手軽に遊べる没入体験ゲーム、それこそがRobloxなのです。</p><br>
+        <div class="point">
+        <p>また、様々なキャラクターとのコラボマップや特別なアイテムをゲットすることが出来ます。</p>
+    </section>
+    <section id="features">
+      <h2>主な特徴</h2>
+      <ul>
+        <li>無料で利用可能</li>
+        <p>一部課金要素はありますが、基本的には無料でたくさんのゲームを遊ぶことが出来ます。</p><br>
+        <li>世界中のプレイヤーとの交流</li>
+        <p>海外のプレイヤーとの交流が盛んで、グローバルなつながりを持つことが可能です。</p><br>
+        <li>自分のゲームを作成・公開可能</li>
+        <p>RobloxStudioとLuaを組み合わせて自分だけのゲームを作ることができます。</p><br>
+        <li>多様なジャンルのゲームを楽しめる</li>
+        <P>遊び方は無限大！あなただけの世界を楽しみましょう</P><br>
+      </ul>
+    </section>
+    <section id="favorite-games">
+      <h2>おすすめのゲーム紹介</h2>
+      <ol>
+        <li>圧力洗浄シミュレーター:<a href="https://www.roblox.com/ja/games/7009799230/Pressure-Wash-Simulator"
+            target="_blank">リンク</a></li><br>
+        <img src="images/imagewashjpg.jpg" alt="introduction" width="200" height="100">
+        <li>スプラッシュスケート&ミュージック:<a href="https://www.roblox.com/ja/games/4936591712/SPLASH-Skate-Music"
+            target="_blank">リンク</a></li>
+        <img src="images/imagesplash.jpg" alt="introduction" width="200" height="100">
+        <li>ミームアタック:<a href="https://www.roblox.com/ja/games/3139016955/Meme-Attack" target="_blank">リンク</a></li>
+        <img src="images/imagememe.jpg" alt="introduction" width="200" height="100">
+      </ol>
+    </section>
+    <section id="movies">
+      <h2>ロブロックス関連のおすすめ動画</h2>
+      <div id="youtube-container"></div>
+    </section>
+    <section id="how-to-start">
+      <h2>始め方</h2>
+      <ul>
+        <li>1 公式サイトにアクセスする: <a href="https://www.roblox.com/" target="_blank">Roblox公式サイト</a></li>
+        <li>2 無料アカウントを作成</li>
+        <li>3 好きなゲームを選んでプレイ開始！</li>
+      </ul>
+    </section>
+  </main>
+  <footer>
+    <p>&copy; 2024 introduce-Roblox. All rights reserved.</p>
+    <p>詳しくは公式サイトをご覧ください: <a href="https://www.roblox.com/" target="_blank">https://www.roblox.com/</a></p>
+  </footer>
+  <script src="js/jquery-3.3.1.min.js"></script>
+  <script src="js/jquery.colorbox-min.js"></script>
+  <script src="js/index.js"></script>
+</body>
+
+</html>

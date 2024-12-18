@@ -1,0 +1,289 @@
+/* リセット */
+body,
+h1,
+h2,
+p,
+ul,
+li,
+ol,
+a {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* ベーススタイル */
+body {
+  font-family: 'Arial', sans-serif;
+  line-height: 1.6;
+  color: #333;
+  background-color: #000000;
+  margin: 0;
+  padding: 0;
+}
+
+/* ヘッダー */
+header {
+  background-color: #000000;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
+
+header h1 {
+  font-size: 2.5em;
+  margin-bottom: 10px;
+}
+
+header p {
+  font-size: 3.2em;
+}
+
+/* メイン */
+main {
+  padding: 20px;
+}
+
+/* 各セクション */
+section {
+  margin-bottom: 30px;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+section h2 {
+  font-size: 1.8em;
+  margin-bottom: 15px;
+  color: #ff5733;
+  border-left: 5px solid #ff5733;
+  padding-left: 10px;
+}
+
+section p,
+section ul,
+section ol {
+  font-size: 1.1em;
+  line-height: 1.8;
+  color: #555;
+}
+
+/* リスト */
+ul {
+  list-style-type: disc;
+  margin-left: 20px;
+}
+
+ol {
+  list-style-type: decimal;
+  margin-left: 20px;
+  display: flex;
+}
+
+.point {
+  color: #865;
+  text-decoration: underline;
+}
+/* リンク */
+a {
+  color: #ff5733;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* フッター */
+footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #222;
+  color: #fff;
+}
+
+footer a {
+  color: #ff5733;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  background-color: #f4f4f4;
+}
+
+.slideshow-container {
+  position: relative;
+  max-width: 800px;
+  margin: auto;
+  overflow: hidden;
+}
+
+.slide {
+  display: none;
+  position: relative;
+}
+
+.slide img {
+  width: 25%;
+  border-radius: 8px;
+}
+
+.prev,
+.next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  padding: 8px 16px;
+  border: none;
+  cursor: pointer;
+  z-index: 10;
+}
+
+.prev {
+  left: 10px;
+}
+
+.next {
+  right: 10px;
+}
+
+.fade {
+  animation: fadeEffect 1.5s;
+}
+
+@keyframes fadeEffect {
+  from {
+    opacity: 0.4;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+.image-container {
+  position: relative;
+  display: inline-block;
+  overflow: hidden;
+}
+
+.image-container img {
+  transition: transform 0.3s ease;
+}
+
+.image-container img:hover {
+  transform: scale(1.5);
+
+}
+
+.images {
+  display: inline-block;
+}
+
+/* ベーススタイル */
+body,
+html {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  height: 100%;
+}
+
+/* ヘッダー */
+header {
+  text-align: center;
+  padding: 20px;
+  background-color: #000000f7;
+}
+
+/* メインコンテンツ */
+main {
+  padding: 20px;
+}
+
+/* ハンバーガーアイコン */
+.hamburger {
+  width: 40px;
+  height: 30px;
+  position: fixed;
+  /* 固定位置に配置 */
+  bottom: 20px;
+  /* 画面下からの距離 */
+  left: 5%;
+  /* 画面中央 */
+  transform: translateX(-50%);
+  /* 中央揃え */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  cursor: pointer;
+  z-index: 1000;
+  /* メニューより前面に表示 */
+}
+
+.hamburger span {
+  display: block;
+  width: 100%;
+  height: 4px;
+  background-color: #333;
+  border-radius: 2px;
+  transition: 0.3s;
+}
+
+/* メニュー */
+.menu {
+  display: none;
+  /* 初期状態は非表示 */
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  color: #fff;
+  z-index: 999;
+  /* ハンバーガーの下に配置 */
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.menu ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  text-align: center;
+}
+
+.menu li {
+  margin: 15px 0;
+}
+
+.menu li a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 24px;
+}
+
+/* ハンバーガーメニューが開いた状態 */
+.menu.open {
+  display: flex;
+  /* メニューを表示 */
+}
+
+.hamburger.open span:nth-child(1) {
+  transform: rotate(45deg) translate(5px, 5px);
+}
+
+.hamburger.open span:nth-child(2) {
+  opacity: 0;
+  /* 中央の線を非表示 */
+}
+
+.hamburger.open span:nth-child(3) {
+  transform: rotate(-45deg) translate(5px, -5px);
+}
